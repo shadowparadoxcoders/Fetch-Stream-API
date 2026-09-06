@@ -27,10 +27,10 @@
 
 <a href="#!"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,50:7928ca,100:ff007f&height=4" width="100%"/></a>
 
-## ðŸ“– About FetchStream API
+## 📖 About FetchStream API
 
 > [!NOTE]
-> **FetchStream API** is a specialized, high-performance streaming link extraction engine built by **Unrated Coder â„¢** & **ã€Ž SHADOW Ã— PARADOX Ã— CODERS TM ã€**. It is designed to fetch embedded anime/toon streaming links, bypass annoying click-ad overlays, and extract direct download mirrors cleanly inside a Vercel serverless environment.
+> **FetchStream API** is a specialized, high-performance streaming link extraction engine built by **Unrated Coder ™** & **『 SHADOW × PARADOX × CODERS TM 』**. It is designed to fetch embedded anime/toon streaming links, bypass annoying click-ad overlays, and extract direct download mirrors cleanly inside a Vercel serverless environment.
 
 <div align="center">
 <a href="#!">
@@ -48,7 +48,7 @@
 
 <a href="#!"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,50:7928ca,100:ff007f&height=4" width="100%"/></a>
 
-## ðŸŽ¯ Target Platforms & Ecosystem
+## 🎯 Target Platforms & Ecosystem
 
 > [!TIP]
 > **AnimeSalt (`animesalt.ac`)** > Deep series indexer, season mapper, and Base64 localized stream payloads.
@@ -61,7 +61,7 @@
 
 <a href="#!"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,50:7928ca,100:ff007f&height=4" width="100%"/></a>
 
-## ðŸš€ Live Production Endpoint
+## 🚀 Live Production Endpoint
 
 ```text
 https://fetch-stream.vercel.app
@@ -69,22 +69,22 @@ https://fetch-stream.vercel.app
 
 <a href="#!"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,50:7928ca,100:ff007f&height=4" width="100%"/></a>
 
-## ðŸ”Œ Comprehensive API Endpoints Reference
+## 🔌 Comprehensive API Endpoints Reference
 
 ### 1. Unified Multi-Site Search
 
 Queries all integrated target platforms concurrently in a single thread, normalizing divergent search results into a unified payload format.
 
 - **Endpoint:** `GET /search`
-- **Query Parameter:** `q` *(String, Required)* â€” Target search keyword (e.g., `Boruto`, `Chainsaw Man`).
+- **Query Parameter:** `q` *(String, Required)* — Target search keyword (e.g., `Boruto`, `Chainsaw Man`).
 
-#### ðŸ“¥ Sample Request
+#### 📥 Sample Request
 
 ```http
 GET https://fetch-stream.vercel.app/search?q=Boruto
 ```
 
-#### ðŸ“¤ Sample JSON Response (`200 OK`)
+#### 📤 Sample JSON Response (`200 OK`)
 
 ```json
 {
@@ -115,12 +115,12 @@ GET https://fetch-stream.vercel.app/search?q=Boruto
 - **Episodes & Seasons:** `GET /animesalt/episodes?url=<series_url>` *(Extracts native layout thumbnails)*
 - **Stream Extractor:** `GET /animesalt/streams?url=<episode_url>` *(Decodes Base64 localized streaming links)*
 
-#### ðŸ“¤ Sample Response (`/animesalt/episodes`)
+#### 📤 Sample Response (`/animesalt/episodes`)
 
 ```json
 {
   "seasons": [
-    { "name": "Season 1 â€¢ 1-11 (11)", "seasonNum": "1", "postId": "2308" }
+    { "name": "Season 1 • 1-11 (11)", "seasonNum": "1", "postId": "2308" }
   ],
   "episodes": [
     {
@@ -141,7 +141,7 @@ GET https://fetch-stream.vercel.app/search?q=Boruto
 - **Grid Episode Extractor:** `GET /toonstream/episodes?url=<series_url>`
 - **Embed Stream & Direct Download Resolver:** `GET /toonstream/streams?url=<episode_url>` *(Bypasses click-ads and fetches raw stream / download links)*
 
-#### ðŸ“¤ Sample Response (`/toonstream/streams`)
+#### 📤 Sample Response (`/toonstream/streams`)
 
 ```json
 {
@@ -174,13 +174,13 @@ A fallback endpoint returning crisp high-definition episode screenshots, overvie
 - **Endpoint:** `GET /tmdb/episode-thumbnail`
 - **Query Parameters:** `title` (String), `season` (Number), `episode` (Number)
 
-#### ðŸ“¥ Sample Request
+#### 📥 Sample Request
 
 ```http
 GET https://fetch-stream.vercel.app/tmdb/episode-thumbnail?title=Chainsaw%20Man&season=1&episode=4
 ```
 
-#### ðŸ“¤ Sample JSON Response (`200 OK`)
+#### 📤 Sample JSON Response (`200 OK`)
 
 ```json
 {
@@ -200,7 +200,7 @@ GET https://fetch-stream.vercel.app/tmdb/episode-thumbnail?title=Chainsaw%20Man&
 
 <a href="#!"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,50:7928ca,100:ff007f&height=4" width="100%"/></a>
 
-## ðŸ› ï¸ Local Installation & Setup
+## 🛠️ Local Installation & Setup
 
 To boot and test this microservice locally on your computer:
 
@@ -222,7 +222,7 @@ npm start
 
 <a href="#!"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,50:7928ca,100:ff007f&height=4" width="100%"/></a>
 
-## â˜ï¸ Serverless Deployment
+## ☁️ Serverless Deployment
 
 Configured natively with a root-level `vercel.json` routing configuration file.
 
@@ -231,7 +231,7 @@ Configured natively with a root-level `vercel.json` routing configuration file.
 
 <a href="#!"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,50:7928ca,100:ff007f&height=4" width="100%"/></a>
 
-## âš¡ Tech Stack & Tools Used
+## ⚡ Tech Stack & Tools Used
 
 <p align="center">
 <a href="#!"><img src="https://skillicons.dev/icons?i=nodejs,express,javascript,git,github,vscode,vercel,linux&perline=8" /></a>
@@ -239,10 +239,10 @@ Configured natively with a root-level `vercel.json` routing configuration file.
 
 <a href="#!"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,50:7928ca,100:ff007f&height=4" width="100%"/></a>
 
-## ðŸ¤ Contributors & Joint Partners
+## 🤝 Contributors & Joint Partners
 
 > [!NOTE]
-> FetchStream API is a **collaborative effort** between two passionate development teams. This project thrives on the combined expertise of **Unrated Coder** and **ã€Ž SHADOW Ã— PARADOX Ã— CODERS TM ã€**.
+> FetchStream API is a **collaborative effort** between two passionate development teams. This project thrives on the combined expertise of **Unrated Coder** and **『 SHADOW × PARADOX × CODERS TM 』**.
 
 <div align="center">
 
@@ -257,7 +257,7 @@ Configured natively with a root-level `vercel.json` routing configuration file.
 <img src="https://img.shields.io/badge/Telegram-@Unrated__Coder-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
 </a>
 <br/><br/>
-<b>Unrated Coder â„¢</b>
+<b>Unrated Coder ™</b>
 <br/>
 <sub>Core Architecture & API Engineering</sub>
 </td>
@@ -270,7 +270,7 @@ Configured natively with a root-level `vercel.json` routing configuration file.
 <img src="https://img.shields.io/badge/Telegram-Shadow_Paradox_Coders-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />
 </a>
 <br/><br/>
-<b>ã€Ž SHADOW Ã— PARADOX Ã— CODERS TM ã€</b>
+<b>『 SHADOW × PARADOX × CODERS TM 』</b>
 <br/>
 <sub>Integration, UI/UX & Community Growth</sub>
 </td>
@@ -287,7 +287,7 @@ Configured natively with a root-level `vercel.json` routing configuration file.
 
 <a href="#!"><img src="https://capsule-render.vercel.app/api?type=rect&color=0:00f7ff,50:7928ca,100:ff007f&height=4" width="100%"/></a>
 
-## âš ï¸ Disclaimer & Legal Compliance
+## ⚠️ Disclaimer & Legal Compliance
 
 > [!CAUTION]
 > This repository is built strictly for **educational research and analytical integration**. FetchStream acts as an abstract data indexer querying public web records. It does not store, host, or re-transmit copyrighted media binaries on its servers.
@@ -296,7 +296,7 @@ Configured natively with a root-level `vercel.json` routing configuration file.
 
 <div align="center">
 
-## ðŸŒ Connect With The Builders
+## 🌐 Connect With The Builders
 
 <p>
 <a href="https://t.me/Unrated_Coder">
@@ -318,7 +318,7 @@ Configured natively with a root-level `vercel.json` routing configuration file.
 </a>
 </p>
 
-<p><b>â­ Star this repository if it helps your automation or development workflow!</b></p>
+<p><b>⭐ Star this repository if it helps your automation or development workflow!</b></p>
 
 <a href="#!"><img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,50:7928ca,100:ff007f&height=140&section=footer" width="100%"/></a>
 
